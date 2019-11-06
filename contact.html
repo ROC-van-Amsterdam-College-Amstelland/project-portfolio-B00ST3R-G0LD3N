@@ -21,11 +21,22 @@
                   <a href="projecten.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Projecten</a>
                   <div class="w3-dropdown-hover w3-hide-small">     
                     <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                            
+                        <p id="date"></p>
+                            <script>
+                              n = new Date();
+                              y = n.getFullYear();
+                              m = n.getMonth() + 1;
+                              d = n.getDate();
+                              document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+                            </script>
+                
                     </div>
                   </div>
               
                 </div>
               </div>
+              
 
         <div class="w3-black" id="tour">
                 <div class="w3-container w3-content w3-padding-64" style="max-width:800px">

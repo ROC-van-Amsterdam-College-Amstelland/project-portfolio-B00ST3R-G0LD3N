@@ -113,7 +113,17 @@ body {font-family: "Lato", sans-serif}
             <p> vrijdag	08:30–18:00</p>
             <p> zaterdag	Gesloten</p>
             <p> zondag	Gesloten</p>
-            <br><br><br><br><br><br>
+            
+            <p id="date"></p>
+            <script>
+              n = new Date();
+              y = n.getFullYear();
+              m = n.getMonth() + 1;
+              d = n.getDate();
+              document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+            </script>
+
+
           </div>
            
         </div>
